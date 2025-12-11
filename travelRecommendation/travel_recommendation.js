@@ -1,5 +1,11 @@
 const box = document.getElementById("returns");
-import data from "./travel_recommendation_api.json" assert {type:json};
+let d
+
+fetch('travel_recommendation_api.json')
+.then(response => response.json())
+          .then(data => {
+            d = data
+          })
 
 
 function clear() {
@@ -14,7 +20,7 @@ function find() {
     const input = document.getElementById('search').value.toLowerCase();
     console.log(input);
             if (input == "beach") {
-                const beaches = data.beaches;
+                const beaches = d.beaches;
                 for(const beache of beaches) {
                     box.innerHTML = `<section class="card">
                     <h1> ${beache.name} </h1>
@@ -24,7 +30,7 @@ function find() {
                 }
             }
             else if (input == "temple"){
-                const temples = data.temples;
+                const temples = d.temples;
                 for(const temple of temples) {
                     box.innerHTML = `<section class="card">
                     <h1> ${temple.name} </h1>
@@ -34,7 +40,7 @@ function find() {
                 }
             }
             else if (input == "australia" ) {
-                const australia = data.countries[0].cities;
+                const australia = d.countries[0].cities;
                 for(const australias of australia) {
                     box.innerHTML = `<section class="card">
                     <h1> ${australias.name} </h1>
@@ -44,7 +50,7 @@ function find() {
                 }
             }
             else if (input == "japan") {
-               const japan = data.countries[1].cities;
+               const japan = d.countries[1].cities;
                 for(const japans of japan) {
                     box.innerHTML = `<section class="card">
                     <h1> ${japans.name} </h1>
@@ -54,7 +60,7 @@ function find() {
                 }
             }
             else if (input == "brazil") {
-                const brazil = data.countries[2].cities;
+                const brazil = d.countries[2].cities;
                 for(const brazils of brazil) {
                     box.innerHTML = `<section class="card">
                     <h1> ${brazils.name} </h1>
