@@ -1,0 +1,140 @@
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    height: 70px;
+    background-color: cadetblue;
+    display: flex;
+}
+
+.title {
+    vertical-align: middle;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: darkcyan;
+    vertical-align: middle;
+    margin: 10px;
+    width: 100px;
+    font-size: x-large;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.search {
+    border-radius: 25px;
+    vertical-align: middle;
+    height: 50px;
+    color: darkcyan;
+}
+
+button {
+    border-radius: 25px;
+    height: 50px;
+    vertical-align: middle;
+    width: 100px;
+    background-color: darkcyan;
+    color: white;
+}
+
+.nav-items {
+    margin: auto;
+    vertical-align: middle;
+    height: fit-content;
+}
+
+body {
+background-image: url("./holiday.jpg");
+background-size: cover;
+margin: 0;
+}
+
+.description {
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 500px;
+    color: white;
+    background-color: darkcyan;
+    border-radius: 25px;
+    padding: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-color: black;
+    border-width: 10px;
+}
+
+.header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    size: 150px
+}
+
+.book {
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.about {
+    margin: 50px;
+    color: white;
+    background-color: darkcyan;
+    border-radius: 25px;
+    padding: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-color: black;
+    border-width: 10px;
+}
+
+.staff {
+    display: flex;
+    margin-left: 50px;
+}
+
+.member {
+    margin-left:175px;
+    background-color: darkcyan;
+    border-radius: 25px;
+    padding: 25px;
+    width: 200px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact {
+    display: flex;
+    margin: 100px;
+    margin-left: 400px;
+}
+
+.form {
+    margin-left: 100px;
+    width: 200px;
+    font-size: x-large;
+    background-color: darkcyan;
+    border-radius: 25px;
+    padding: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.contactus {
+    background-color: darkcyan;
+    padding: 50px;
+    color: white;
+    border-radius: 25px;
+}
+
+.input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
