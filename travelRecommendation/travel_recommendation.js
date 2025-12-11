@@ -1,4 +1,4 @@
-const box = document.getElementById("returns");
+
 let d
 
 fetch('travel_recommendation_api.json')
@@ -18,8 +18,9 @@ document.getElementById('clearbutton').addEventListener('click',clear);
 
 function find() {
     const input = document.getElementById('search').value.toLowerCase();
+    const box = document.getElementById("returns");
     console.log(input);
-            if (input == "beach") {
+            if (input == "beaches") {
                 const beaches = d.beaches;
                 for(const beache of beaches) {
                     box.innerHTML = `<section class="card">
