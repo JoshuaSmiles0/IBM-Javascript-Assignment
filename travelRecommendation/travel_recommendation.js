@@ -26,7 +26,8 @@ function find() {
                     const title = document.createElement("h1")
                     title.innerHTML = `${beache.name}`
                     const image = document.createElement("img")
-                    image.href = `${beache.imageUrl}`
+                    image.src = `${beache.imageUrl}`
+                    image.alt = "this should be a beach"
                     const description = document.createElement("p")
                     description.innerHTML = `${beache.description}`
                     const bre = document.createElement("br")
