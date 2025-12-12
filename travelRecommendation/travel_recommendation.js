@@ -43,11 +43,10 @@ function find() {
             else if (input == "australia" ) {
                 const australia = d.countries[0].cities;
                 for(const australias of australia) {
-                    box.innerHTML = `<section class="card">
-                    <h1> ${australias.name} </h1>
-                    <img src="${australias.imageUrl}>
-                    <p> ${australias.description} </p>
-                    </section` 
+                    box.innerHTML = `<h1> ${australias.name} </h1>`
+                    box.innerHTML += `<img src="${australias.imageUrl}>`
+                    box.innerHTML += `<p> ${australias.description} </p>`
+                    box.innerHTML += `<br>`
                 }
             }
             else if (input == "japan") {
