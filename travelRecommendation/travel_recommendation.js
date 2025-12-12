@@ -9,7 +9,7 @@ fetch('travel_recommendation_api.json')
 
 
 function clear() {
-    box.innerHTML = '';
+    box.innerHTML = "";
 }
 
 document.getElementById('clearbutton').addEventListener('click',clear);
@@ -21,7 +21,7 @@ function find() {
     const box = document.getElementById("returns");
     box.innerHTML = "";
     console.log(input);
-            if (input == "beaches") {
+            if (input == "beaches" || input == "beach") {
                 const beaches = d.beaches;
                 for(const beache of beaches) {
                     const title = document.createElement("h1")
@@ -40,7 +40,7 @@ function find() {
                     box.appendChild(bre)
                 }
             }
-            else if (input == "temple"){
+            else if (input == "temple" || input == "temples"){
                 const temples = d.temples;
                 for(const temple of temples) {
                     const title = document.createElement("h1")
