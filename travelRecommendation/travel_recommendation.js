@@ -43,40 +43,77 @@ function find() {
             else if (input == "temple"){
                 const temples = d.temples;
                 for(const temple of temples) {
-                    box.innerHTML = `<section class="card">
-                    <h1> ${temple.name} </h1>
-                    <img src="${temple.imageUrl}>
-                    <p> ${temple.description} </p>
-                    </section` 
+                    const title = document.createElement("h1")
+                    title.innerHTML = `${temple.name}`
+                    const image = document.createElement("img")
+                    image.src = `${temple.imageUrl}`
+                    image.alt = "this should be a temple"
+                    image.style.height="100px"
+                    image.style.width="100px"
+                    const description = document.createElement("p")
+                    description.innerHTML = `${temple.description}`
+                    const bre = document.createElement("br")
+                    box.appendChild(title)
+                    box.appendChild(image)
+                    box.appendChild(description)
+                    box.appendChild(bre)
                 }
             }
             else if (input == "australia" ) {
                 const australia = d.countries[0].cities;
                 for(const australias of australia) {
-                    box.innerHTML = `<h1> ${australias.name} </h1>`
-                    box.innerHTML += `<img href="${australias.imageUrl}>`
-                    box.innerHTML += `<p> ${australias.description} </p>`
-                    box.innerHTML += `<br>`
+                    const title = document.createElement("h1")
+                    title.innerHTML = `${australias.name}`
+                    const image = document.createElement("img")
+                    image.src = `${australias.imageUrl}`
+                    image.alt = "this should be a beach"
+                    image.style.height="100px"
+                    image.style.width="100px"
+                    const description = document.createElement("p")
+                    description.innerHTML = `${australias.description}`
+                    const bre = document.createElement("br")
+                    box.appendChild(title)
+                    box.appendChild(image)
+                    box.appendChild(description)
+                    box.appendChild(bre)
                 }
             }
             else if (input == "japan") {
                const japan = d.countries[1].cities;
                 for(const japans of japan) {
-                    box.innerHTML =
-                    `<h1> ${japans.name} </h1>
-                    <img href="${japans.imageUrl}>
-                    <p> ${japans.description} </p>
-                    </section` 
+                    const title = document.createElement("h1")
+                    title.innerHTML = `${japans.name}`
+                    const image = document.createElement("img")
+                    image.src = `${japans.imageUrl}`
+                    image.alt = "this should be a beach"
+                    image.style.height="100px"
+                    image.style.width="100px"
+                    const description = document.createElement("p")
+                    description.innerHTML = `${japans.description}`
+                    const bre = document.createElement("br")
+                    box.appendChild(title)
+                    box.appendChild(image)
+                    box.appendChild(description)
+                    box.appendChild(bre)
                 }
             }
             else if (input == "brazil") {
                 const brazil = d.countries[2].cities;
                 for(const brazils of brazil) {
-                    box.innerHTML = `<section class="card">
-                    <h1> ${brazils.name} </h1>
-                    <img src="${brazils.imageUrl}>
-                    <p> ${brazils.description} </p>
-                    </section` 
+                    const title = document.createElement("h1")
+                    title.innerHTML = `${brazils.name}`
+                    const image = document.createElement("img")
+                    image.src = `${brazils.imageUrl}`
+                    image.alt = "this should be a beach"
+                    image.style.height="100px"
+                    image.style.width="100px"
+                    const description = document.createElement("p")
+                    description.innerHTML = `${brazils.description}`
+                    const bre = document.createElement("br")
+                    box.appendChild(title)
+                    box.appendChild(image)
+                    box.appendChild(description)
+                    box.appendChild(bre)
                 }
             }
             else {
