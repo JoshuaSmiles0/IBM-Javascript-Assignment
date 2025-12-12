@@ -23,11 +23,17 @@ function find() {
             if (input == "beaches") {
                 const beaches = d.beaches;
                 for(const beache of beaches) {
-                    box.innerHTML = `<section class="card">
-                    <h1> ${beache.name} </h1>
-                    <img src="${beache.imageUrl}>
-                    <p> ${beache.description} </p>
-                    </section` 
+                    const title = document.createElement("h1")
+                    title.innerHTML = `${beache.name}`
+                    const image = document.createElement("img")
+                    image.href = `${beache.imageUrl}`
+                    const description = document.createElement("p")
+                    description.innerHTML = `${beache.description}`
+                    const bre = document.createElement("br")
+                    box.appendChild(title)
+                    box.appendChild(image)
+                    box.appendChild(description)
+                    box.appendChild(bre)
                 }
             }
             else if (input == "temple"){
@@ -44,7 +50,7 @@ function find() {
                 const australia = d.countries[0].cities;
                 for(const australias of australia) {
                     box.innerHTML = `<h1> ${australias.name} </h1>`
-                    box.innerHTML += `<img src="${australias.imageUrl}>`
+                    box.innerHTML += `<img href="${australias.imageUrl}>`
                     box.innerHTML += `<p> ${australias.description} </p>`
                     box.innerHTML += `<br>`
                 }
@@ -52,9 +58,9 @@ function find() {
             else if (input == "japan") {
                const japan = d.countries[1].cities;
                 for(const japans of japan) {
-                    box.innerHTML = `<section class="card">
-                    <h1> ${japans.name} </h1>
-                    <img src="${japans.imageUrl}>
+                    box.innerHTML =
+                    `<h1> ${japans.name} </h1>
+                    <img href="${japans.imageUrl}>
                     <p> ${japans.description} </p>
                     </section` 
                 }

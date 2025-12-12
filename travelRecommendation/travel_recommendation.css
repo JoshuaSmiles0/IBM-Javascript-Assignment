@@ -136,5 +136,12 @@ margin: 0;
     margin-bottom: 20px;
 }
 
+.box {
+    color: white;
+    background-color: darkcyan;
+    padding: 20px;
+    border-radius: 25px;
+}
+
 
 
