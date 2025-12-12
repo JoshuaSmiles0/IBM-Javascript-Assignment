@@ -9,7 +9,8 @@ fetch('travel_recommendation_api.json')
 
 
 function clear() {
-    box.innerHTML = "";
+    const container = document.getElementById("returns")
+    container.innerHTML = "";
 }
 
 document.getElementById('clearbutton').addEventListener('click',clear);
