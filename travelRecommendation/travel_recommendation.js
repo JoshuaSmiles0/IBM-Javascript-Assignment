@@ -19,6 +19,7 @@ document.getElementById('clearbutton').addEventListener('click',clear);
 function find() {
     const input = document.getElementById('search').value.toLowerCase();
     const box = document.getElementById("returns");
+    box.innerHTML = "";
     console.log(input);
             if (input == "beaches") {
                 const beaches = d.beaches;
@@ -28,6 +29,8 @@ function find() {
                     const image = document.createElement("img")
                     image.src = `${beache.imageUrl}`
                     image.alt = "this should be a beach"
+                    image.style.height="100px"
+                    image.style.width="100px"
                     const description = document.createElement("p")
                     description.innerHTML = `${beache.description}`
                     const bre = document.createElement("br")

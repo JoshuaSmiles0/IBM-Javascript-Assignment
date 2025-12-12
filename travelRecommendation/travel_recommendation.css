@@ -136,11 +136,13 @@ margin: 0;
     margin-bottom: 20px;
 }
 
-.returns {
+#returns {
     color: white;
     background-color: darkcyan;
     padding: 20px;
     border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 200px;
 }
 
 
